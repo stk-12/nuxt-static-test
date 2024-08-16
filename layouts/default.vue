@@ -1,6 +1,7 @@
 <template>
   <div class="container">
+    <Header />
     <slot />
-    <footer>&copy; copyrights</footer>
+    <Footer />
   </div>
 </template>
