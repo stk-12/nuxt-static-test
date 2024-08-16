@@ -7,6 +7,7 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
 useHead({
   title: 'Nuxt Demo', 
   meta: [
@@ -14,9 +15,8 @@ useHead({
     { property: 'og:title', content: 'Nuxt Demoサイト（og:title）' },
     { property: 'og:type', content: 'article' },
     { property: 'og:description', content: 'Nuxt Demoサイト（og:description）' },
-    { property: 'og:url', content: 'https://tech-sc.net/nuxt_demo_mpa/' },
-    { property: 'og:image', content: 'https://tech-sc.net/nuxt_demo_mpa/images/ogp.png' }
-
+    { property: 'og:url', content: config.public.baseUrl },
+    { property: 'og:image', content: config.public.baseUrl + 'images/ogp.png' }
   ]
 })
 </script>

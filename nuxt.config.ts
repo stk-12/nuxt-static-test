@@ -16,6 +16,11 @@ export default defineNuxtConfig({
     //   ]
     // }
   },
+  runtimeConfig: {
+    public: {
+      baseUrl: 'https://tech-sc.net/nuxt_demo_mpa/'
+    }
+  },
   hooks: {
     // カスタムルート設定
     'pages:extend' (routes) {
