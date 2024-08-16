@@ -1,3 +1,5 @@
 <template>
-  <footer>&copy; copyrights</footer>
+  <footer class="l-footer">
+    &copy; copyrights
+  </footer>
 </template>

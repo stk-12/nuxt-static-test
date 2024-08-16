@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="l-header">
     header
   </header>
 </template>
