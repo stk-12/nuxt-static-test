@@ -6,6 +6,15 @@ export default defineNuxtConfig({
   // ssr: false, // falseにするとアプリケーションがSPAとして動作するようになる
   app: {
     baseURL: '/nuxt_demo_mpa/',
+    // head: {
+    //   title: 'Nuxt Demo',
+    //   meta: [
+    //     { name: 'description', content: 'Nuxt Demoサイトの説明文'},
+    //     { property: 'og:title', content: 'Nuxt Demoサイト（og:title）' },
+    //     { property: 'og:type', content: 'article' },
+    //     { property: 'og:description', content: 'Nuxt Demoサイト（og:description）' }
+    //   ]
+    // }
   },
   hooks: {
     // カスタムルート設定

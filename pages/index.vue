@@ -23,7 +23,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 img {
   width: 100%;
   height: auto;
@@ -37,5 +36,16 @@ img {
     }
   }
 }
-
 </style>
+
+<script setup>
+useHead({
+  title: `TOPページ｜Nuxt Demo`, 
+  meta: [
+    { name: 'description', content: 'TOPページの説明文'},
+    { property: 'og:title', content: 'TOPページ（og:title）' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:description', content: 'TOPページ（og:description）' },
+  ]
+})
+</script>
