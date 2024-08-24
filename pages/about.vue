@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h1>About Page</h1>
+  <div class="l-page">
+    <div class="l-inner">
+      <h1>About Page</h1>
 
-    <NuxtLink to="/">Topページへ</NuxtLink>
+      <NuxtLink to="/">Topページへ</NuxtLink>
+    </div>
   </div>
 </template>
 
