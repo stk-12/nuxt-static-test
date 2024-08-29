@@ -33,26 +33,17 @@ $smDesignW: 750;
 $mdDesignW: $md;
 
 //font
-$font-ja: 'Noto Serif JP', serif;
-$font-en: 'EB Garamond', serif;
+$font-ja: "Noto Sans JP", sans-serif;
+$font-en: "Montserrat", sans-serif;
 $font-sans: 'Noto Sans JP', sans-serif;
 
 //key color
-$colorMain: #8f6f12;
-$colorMainLight01: #b28850;
-$colorMainLight02: #dfcd9a;
-$colorMainLight03: #b59e66;
-$colorMainLight04: #b19765;
-
-
 $colorBase: #F6F6F6;
 $colorPlain: #000;
-$colorPlainSub: #6A7380;
 $colorBorder: #ddd;
 
 $colorFocus: #aaa;
-$colorGray01: #eee;
-$colorGray02: #ccc;
+
 
 
 //margin
@@ -112,10 +103,6 @@ $easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all .3s $easeOutQuad;
 }
 
-@mixin transitionSlow {
-  transition: all .5s $easeOutQuad;
-}
-
 //media query
 @mixin xsMin {
   @media print, screen and ($xsMin) {
@@ -173,63 +160,4 @@ $easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 
-//hover
-@mixin hover {
-  @include smMin {
-    .is-view-pc & {
-      &:hover {
-        @content;
-      }
-    }
-  }
-}
 
-
-//-----------------------------------------------------------------
-//anime
-//-----------------------------------------------------------------
-//fadeIn
-@mixin animate-fadeIn($duration, $delay) {
-  opacity: 0;
-  transition-duration: $duration;
-  transition-delay: $delay;
-}
-@mixin animated-fadeIn {
-  opacity: 1;
-}
-
-//fadeInUp
-@mixin animate-fadeInUp($duration, $delay) {
-  opacity: 0;
-  transform: translateY(50px);
-  transition-duration: $duration;
-  transition-delay: $delay;
-}
-@mixin animated-fadeInUp {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-//fadeInLeft
-@mixin animate-fadeInLeft($duration, $delay) {
-  opacity: 0;
-  transform: translateX(50px);
-  transition-duration: $duration;
-  transition-delay: $delay;
-}
-@mixin animated-fadeInLeft {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-//fadeInRight
-@mixin animate-fadeInRight($duration, $delay) {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition-duration: $duration;
-  transition-delay: $delay;
-}
-@mixin animated-fadeInRight {
-  opacity: 1;
-  transform: translateX(0);
-}

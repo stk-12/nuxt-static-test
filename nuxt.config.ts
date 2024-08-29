@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      baseUrl: 'https://tech-sc.net/nuxt_demo_mpa/'
+      baseUrl: 'https://xxx/nuxt_demo_mpa/'
     }
   },
   hooks: {
