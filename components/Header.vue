@@ -13,7 +13,7 @@
             <NuxtLink to="/company/">Company</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/users/">Users</NuxtLink>
+            <NuxtLink to="/gallery/">Gallery</NuxtLink>
           </li>
         </ul>
       </nav>
